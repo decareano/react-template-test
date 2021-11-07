@@ -20,19 +20,22 @@ function App() {
     addGeneralValue([inputValue])
     e.preventDefault()
   }
-
-  const resetInputField = () => {
-    setInputValue("")
-  }
+  // below function clears the field. and it relates to Reset button in the return 
+  // const resetInputField = () => {
+  //   setInputValue("")
+  // }
 
   
   return (
     <form onSubmit={e => {handleInput(e)}}>
     
 
-      {/* // mapped the inputValue state to the input field */}
+      {/* // mapped the inputValue state to the input field. Below is called an input element 
+      the onChange handler is used to handle user input in real time*/}
+      
       <input type="text" value={inputValue} onChange={e => setInputValue(e.target.value)} />
-      <button onClick={resetInputField}>Submit</button>
+      <button onClick={handleInput}>Submit</button>
+      {/* <button onClick={resetInputField}>Reset</button> */}
       <Table test={generalValue} />
     
     </form>

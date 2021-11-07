@@ -6,8 +6,8 @@ function Table(props) {
         <thead> 
           <tr>
             <th>Chore Description</th>
-            <th>Name</th>
-            <th>Date</th>
+            {/* <th>Name</th>
+            <th>Date</th> */}
            
           </tr>
           </thead> 
